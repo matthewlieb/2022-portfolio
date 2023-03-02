@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matt Lieb Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <header>
+        <div class="switch">
+            <div class="flicker"></div>
+             <div class="moon"></div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main-text">
+            <h1>PROFESSIONAL</h1>
+            </br>   
+            <p>I wish I could highlight more of my exciting projects.</p>
+            <br/>
+            <p>Unfortunately, my BMT work was stored on the cloud and access was revoked when I was laid off. </p>
+            <br/>
+            <a href="index.html">Home ></a>
+        </div>
+    </section>
+
+    <section class="sub-section">
+
+       <div class="rectangle" id="database">
+           <h1 class="projectTitle">Electric Load Configuration Database</h1>
+            <h2>Problem</h2>
+            <p class="p2">There is no central system to effectively manage loads. Furthermore, loads are related to various items including drawings, locations, and even panels and there needs to be a better way to show all these relationships.</p class="p2">
+           
+            <h2>Process</h2>
+            <p class="p2">For this problem, we chose the most common type of database, a relational database. 
+                This allows one to create connections between categories of information that are related.
+                For example, a one-to-one relation might show up as one cable type to one load.
+                A one-to-many relation might look like one load connected to many drawings. 
+                And a many-to-many relation would look like many drawings tied to many loads. 
+            </p class="p2">
+
+            <h2>Solution</h2>
+            <p class="p2">So, why did we choose a <a href="Images/database copy.PNG" target="_blank" class="smallLink">relational</a> database to solve these issues?
+                Well, first, databases allow you to organize and sort data. 
+                Second, a database makes it easy to find data.
+                Last, a database provides the ability to program and manipulate this data. 
+            </p class="p2">
+        </div> 
+        
+        <div class="rectangle" id="voltageDrop">
+            <h1 class="projectTitle">Branch Circuit Voltage Drop Calculator</h1>
+            <h2>Problem</h2>
+            <p class="p2">The problem in this case is that the American Bureau of Shipping requires calculations for voltage drop across cable lengths. Also,  this is a requirement for a power flow study. </p class="p2">
+           
+            <h2>Process</h2>
+            <p class="p2">To solve this problem we use a Y matrix, an NxN matrix describing a power system.
+                Essentially, a measure of how easily a circuit or device will allow current to flow.
+                This simple circuit can be represented as a matrix and solved numerically.
+
+            </p class="p2">
+
+            <h2>Solution</h2>
+            <p class="p2">The solving technique can be extended to model loads as constant power or constant impedance loads as well.
+                Voltage drop gets worse as you get further down circuit.
+                There is not a large change in degrees because higher resistance than reactance (transmission line) = bigger difference in angle than magnitude.
+            </p class="p2">
+        </div> 
+
+         <div class="rectangle" id="panelTool">
+            <h1 class="projectTitle">Three-phase Panel Balancer</h1>
+            <h2>Problem</h2>
+            <p class="p2">We have three phases of power on a ship and loads need to be balanced across those three phases. If loads are not balanced across the phases it will damage the generator through overheating. </p class="p2">
+           
+            <h2>Process</h2>
+            <p class="p2">In order to balance the loads across phases, we modeled a three-phase power panel in Microsoft Excel. We chose a genetic algorithm because the variables are discrete, meaning they take on a single value, and Excel has a built-in implementation.
+            </p class="p2">
+
+            <h2>Solution</h2>
+            <p class="p2"> 
+                    In order to perform the genetic algorithm, we need to create a DNA (series of discrete variables). Unbalances in three-phase generator loading cause negative sequence current. The generator leads are exposed to intense heating as a result of the negative sequence current subjecting the generator rotor to damage. We use the panel solver to optimize load layout and minimize the negative sequence current. 
+            </p class="p2">
+        </div>   
+        
+    </section>
+
+    <footer id="footer">
+        <p>matt.lieb@hotmail.com / (406) 548-1549 / <a href="https://www.linkedin.com/in/matthew-lieb/">Linkedin</a></p>
+    </footer>
+
+<script src="script.js"></script>    
+</body>
+</html>

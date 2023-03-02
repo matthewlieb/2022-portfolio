@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;300;400;500&family=Murecho&family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap');
+
+body{
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 239, 239);
+    font-family: 'IBM Plex Sans Thai Looped',
+    sans-serif;
+    font-family: 'Murecho',
+    sans-serif;
+    font-family: 'Roboto',
+    sans-serif;
+    font-family: 'Roboto Mono',
+    monospace;
+    color: rgb(57, 57, 57);
+}
+
+h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.projectTitle{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 50px 0 10px 0;
+}
+
+p{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.p2{
+    margin: 0px;
+    font-size: 15px; 
+}
+
+a{
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.dark a{
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.smallLink{
+    font-size: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.switch{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(71, 68, 68);
+    position: relative;
+}
+
+.flicker{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark{
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+} 
+
+.dark > * {
+    color:rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-text{
+    padding: 30px;
+}
+
+.square{
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(121, 143, 172);
+    text-align: center;
+}
+
+.rectangle {
+    width: 98%;
+    margin: 1%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden; 
+    padding: 0 20px 50px 20px;
+}
+
+.dark .rectangle{
+    background-color: rgb(71, 71, 71);
+}
+
+.dark .square{
+    background-color: rgb(71, 71, 71);
+}
+
+#professional{
+    background-image: url("images/row-1-column-1.jpg");
+    background-size: cover; 
+} 
+
+ #school {
+    background-image: url("images/row-1-column-2.jpg");
+    background-size: cover;
+}
+
+#misc {
+    background-image: url("images/row-2-column-1.jpg");
+    background-size: cover;
+}
+
+#resume {
+    background-image: url("images/row-2-column-2.jpg");
+    background-size: cover;
+}
+
+.dark #professional {
+    background-image: url("images/row-1-column-1\ \(1\).jpg");
+    background-size: cover;
+}
+
+.dark #school {
+    background-image: url("images/row-1-column-2\ \(1\).jpg");
+    background-size: cover;
+}
+
+.dark #misc {
+    background-image: url("images/row-2-column-1\ \(1\).jpg");
+    background-size: cover;
+}
+
+.dark #resume {
+    background-image: url("images/row-2-column-2\ \(1\).jpg");
+    background-size: cover
+}
+
+.sub-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dark footer{
+    background-color: rgb(71, 71, 71);
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text{
+        width: 50%;
+    }
+    .square{
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+     }
+
+    .hero-image {
+        position: relative;
+        width: 50%;
+        height: 500px;
+        background-image: url("Images/download\ \(1\).png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    .dark .hero-image {
+        background-image: url("Images/download.png");
+    }
+}
